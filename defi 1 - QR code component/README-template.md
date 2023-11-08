@@ -22,8 +22,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component-8YHr-iiiaM))
+- Live Site URL: [Add live site URL here](https://dolpheus89.github.io/ChallengeFrontendmentor.github.io/defi%201%20-%20QR%20code%20component/index.html))
 
 ## My process
 
@@ -39,4 +39,4 @@ first step with Figma , Git/Hub/Page , Readme.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Dolpheus89)
