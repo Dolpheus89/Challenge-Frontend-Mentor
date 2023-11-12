@@ -1,0 +1,528 @@
+/* General */
+
+@font-face {
+    font-family: frauces;
+    src: url(/starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: fraucesBold;
+    src: url(/starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: manrope;
+    src: url(/starter-code/assets/fonts/manrope/static/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: manropeLight;
+    src: url(/starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: manrope, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: fraucesBold, sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #24053E;
+}
+
+button {
+    font-family: manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #44ffa1;
+    border-color: #44ffa1;
+    color: #24053E;
+}
+
+button:hover {
+    background-color: #24053E;
+    color: #44ffa1;
+}
+
+.underligne {
+    text-decoration: underline #44ffa1 3px;
+    text-underline-offset: 10px;
+}
+
+.logo {
+    width: 96px;
+    height: 25px;
+}
+
+/* Header */
+
+header {
+    height: 730px;
+    color: white;
+    position: relative;
+    overflow-x: clip;
+
+}
+
+.purpleCurve {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.deco1 {
+    position: absolute;
+    height: 255px;
+    top: 12%;
+    left: -7%;
+}
+
+.deco2 {
+    position: absolute;
+    height: 155px;
+    top: 60%;
+    left: 93%;
+}
+
+.phoneContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.phone {
+    max-height: 441px;
+    max-width: 767px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.apply {
+    margin: 40px 10%;
+}
+
+.apply {
+    font-family: manropeLight;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.apply a:link {
+    color: white;
+}
+
+.apply a:visited {
+    color: white;
+}
+
+.apply a:hover {
+    color: #44ffa1;
+}
+
+.bigTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#topTitle {
+    margin-top: 50px;
+    width: 635px;
+    height: 160px;
+}
+
+#topButton {
+    margin-top: 37px;
+    width: 161px;
+    height: 61px;
+}
+
+/* header Media Queries */
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        height: 540px;
+    }
+
+    .deco1 {
+        left: -150px;
+    }
+
+    .phone {
+        height: 296px;
+        width: 514px;
+    }
+
+    #topTitle {
+        margin-top: 25px;
+        width: 400px;
+        height: 150px;
+        font-size: 60px;
+        line-height: 65px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .deco1 {
+        left: -200px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        height: 482px;
+    }
+
+    .deco1,
+    .deco2 {
+        opacity: 0;
+    }
+
+    .phone {
+        margin-top: -15px;
+        height: 184px;
+        width: 320px;
+    }
+
+    #topTitle {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .logo,
+    .apply {
+        margin: 40px 5%;
+    }
+}
+
+
+/* Features */
+
+.featuresSection {
+    height: 850px;
+    width: 100%;
+}
+
+.featuresContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 100px 10px;
+}
+
+.feature p,
+h3 {
+    color: #24053E;
+    margin-bottom: 5%;
+}
+
+.featureText {
+    width: 370px;
+    height: 178px;
+}
+
+.featureText p {
+    font-family: manropeLight, sans-serif;
+    font-weight: 500;
+}
+
+
+.number {
+    width: 56px;
+    height: 56px;
+    font-family: fraucesBold, sans-serif;
+    font-size: 24px;
+    color: #24053E;
+    border: #584D62 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.whiteCurve {
+    position: absolute;
+    z-index: -2;
+    top: 504px;
+    width: 100%;
+    height: 960px;
+}
+
+/* Features Media Queries */
+
+@media screen and (max-width:1200px) {
+    .featuresSection {
+        height: 920px;
+        margin-top: 50px;
+    }
+
+    .featuresContainer {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-direction: row;
+        text-align: left;
+        margin: 0;
+    }
+
+    .featureText h3 {
+        font-size: 28px;
+    }
+
+    .featureText p {
+        width: 493px;
+        font-size: 16px;
+    }
+
+    .number {
+        width: 46px;
+        height: 46px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .featuresSection {
+        height: 1070px;
+    }
+
+    .whiteCurve {
+        height: 1170px;
+        top: 400px;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .featureText p {
+        width: 343px;
+    }
+
+    .number {
+        width: 46px;
+        height: 46px;
+        margin: 30px 0 30px 0;
+    }
+}
+
+/* Founder section */
+
+.founder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.founderContainer {
+    height: 647px;
+    width: 1212px;
+    display: flex;
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+.founderImg {
+    height: 477px;
+    width: 477px;
+    z-index: -1;
+}
+
+.founderTextContainer {
+    width: 730px;
+    height: 413px;
+    background-color: #24053E;
+    color: #fcf8ff;
+    display: inline-block;
+    flex-direction: column;
+    position: relative;
+    top: 175px;
+    right: 95px;
+}
+
+.founderTextContent {
+    margin: 60px;
+    font-family: manropeLight, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.founderTextContent p {
+    width: 602px;
+    height: 96px;
+    margin: 30px 0;
+    font-size: 19px;
+}
+
+.founderTextContent button {
+    width: 190px;
+    height: 61px;
+}
+
+.deco4 {
+    position: relative;
+    bottom: 100px;
+    left: 425px;
+    z-index: 1;
+}
+
+/* Founder Media Queries */
+
+@media screen and (max-width:1200px) {
+    .founderContainer {
+        width: 800px;
+        height: 526px;
+    }
+
+    .founderTextContainer {
+        width: 514px;
+        height: 375px;
+        top: 150px;
+        right: 100px;
+    }
+
+    .founderImg {
+        width: 281px;
+        height: 281px;
+    }
+
+    .founderTextContent p {
+        font-size: 16px;
+        width: 390px;
+        height: 112px;
+        margin: 20px 0;
+    }
+
+    .founderTextContent h2 {
+        font-size: 48px;
+    }
+
+    .founderTextContent {
+        height: 375px;
+        margin: 0;
+        padding: 40px 0 0 40px;
+    }
+
+    .founderTextContent button {
+        margin-top: 20px;
+    }
+
+    .deco4 {
+        bottom: 135px;
+        left: 285px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .founderContainer {
+        width: 343px;
+        height: 603px;
+    }
+
+    .founderTextContainer {
+        width: 343px;
+        height: 375px;
+        text-align: center;
+        top: 240px;
+        right: 280px;
+    }
+
+    .founderImg {
+        position: relative;
+        left: 30px;
+    }
+
+    .founderTextContent {
+        padding: 0 30px;
+    }
+
+    .founderTextContent p {
+        width: 281px;
+        height: 168px;
+    }
+
+    .founderTextContent h2 {
+        font-size: 32px;
+    }
+
+    .deco4 {
+        opacity: 0;
+        width: 0px;
+    }
+}
+
+/* Footer */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+    margin: 50px 0;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 116px;
+    margin-top: 20px;
+}
+
+.socialMedia path:hover {
+    fill: #24053E;
+}
