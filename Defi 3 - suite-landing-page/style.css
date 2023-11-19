@@ -1,0 +1,235 @@
+/* Mobile First */
+
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
+:root {
+    --Cream: #F3EDE7;
+    --CreamWhite: #FAf8f6;
+    --DarkBlue: #172339;
+    --Grey: #49566D;
+    --boutonHover: linear-gradient(153deg, rgba(160, 96, 255, 1) 16%, rgba(203, 48, 227, 1) 37%, rgba(255, 168, 78, 1) 100%);
+
+    --HeadingXL: 5em 'Epilogue', sans-serif;
+    --HeadingL: 3em 'Epilogue', sans-serif;
+    --HeadingM: bold 1.1em 'Epilogue', sans-serif;
+    --HeadingS: bold 1em 'Epilogue', sans-serif;
+    --Quote: 1.3em 'Epilogue', sans-serif;
+    --body: 1.1em 'Epilogue', sans-serif;
+    --Footer: 0.9em 'Epilogue', sans-serif;
+}
+
+* {
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(250, 248, 246, 1) 70%, rgba(243, 237, 231, 1) 70%);
+}
+
+button {
+    border-radius: 6px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 5%;
+}
+
+nav img,
+nav button {
+    margin: 0;
+}
+
+nav button {
+    font: bold 14px/24px 'Epilogue', sans-serif;
+    color: var(--DarkBlue);
+    background-color: var(--CreamWhite);
+    border: var(--DarkBlue) 1px solid;
+    height: 48px;
+}
+
+nav button:hover {
+    color: var(--CreamWhite);
+    background-color: var(--DarkBlue);
+}
+
+
+/* Main */
+/* Section 1 */
+
+#topSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Article Super solution */
+
+#superSolution {
+    margin: 3rem auto;
+    width: 330px;
+}
+
+#superSolution img {
+    width: 150px;
+    position: relative;
+    left: 160px;
+}
+
+#superSolution h1 {
+    font: 100 2.38rem 'Epilogue', sans serif;
+    color: var(--DarkBlue);
+    width: 350px;
+    margin: 0;
+}
+
+#superSolution p {
+    font: 1em 'Epilogue', sans serif;
+    line-height: 1.6em;
+    color: var(--Grey);
+    margin: 10% 0;
+    width: 300px;
+}
+
+#superSolution button {
+    font: var(--HeadingM);
+    height: 61px;
+    width: 256px;
+    color: var(--CreamWhite);
+    background-color: var(--DarkBlue);
+    border: 1px solid var(--DarkBlue);
+}
+
+#superSolution button:hover {
+    background: var(--boutonHover);
+    border: none;
+}
+
+/* Phone */
+
+#phone {
+    position: relative;
+    z-index: -1;
+}
+
+
+/*Data*/
+
+#data {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+#data div {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 60px;
+}
+
+#data h2 {
+    font: bold var(--HeadingL);
+    color: var(--DarkBlue);
+}
+
+#data p {
+    font: bold var(--HeadingS);
+    color: var(--Grey);
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* note/avis */
+
+#note {
+    background-color: var(--DarkBlue);
+    border-radius: 15px;
+    margin-top: 150px;
+    height: 800px;
+}
+
+#niceGuy {
+    display: flex;
+    flex-direction: column;
+}
+
+#Jeremy {
+    position: relative;
+    bottom: 175px;
+    z-index: 1;
+}
+
+#blur {
+    position: relative;
+    width: 250px;
+    bottom: 400px;
+    z-index: 0;
+}
+
+#curve2 {
+    position: relative;
+    bottom: 380px;
+}
+
+#avis {
+    color: var(--CreamWhite);
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+}
+
+#avis h2 {
+    font: 2.5rem 'Epilogue', sans-serif;
+}
+
+#avis p {
+    font: var(--body);
+    line-height: 2rem;
+    font-weight: lighter;
+    color: var(--Cream);
+}
+
+#quote {
+    margin: 50px 5%;
+}
+
+#avis h3,
+#avis #adress {
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+#copyright {
+    font: var(--Footer);
+    margin: 40px auto;
+    color: var(--Grey);
+}
+
+#socialMedia svg {
+    margin: 0 10px;
+}
+
+#socialMedia:hover path:hover {
+    fill: var(--Grey);
+    cursor: pointer;
+}

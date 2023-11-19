@@ -1,0 +1,122 @@
+@media screen and (min-width:700px) {
+
+    #superSolution img {
+        width: 231px;
+        left: 230px;
+    }
+
+    #superSolution h1 {
+        font: 100 3.5rem 'Epilogue', sans serif;
+        width: 560px;
+    }
+
+    #phone {
+        content: url(assets/image-hero-portrait.png);
+    }
+
+    #note {
+        width: 90%;
+    }
+
+    #quote {
+        max-width: 550px;
+        margin: 50px auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo,
+    #copyright,
+    #socialMedia {
+        margin: 50px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    nav {
+        margin: 3% 10%;
+    }
+
+    #topSection {
+        margin: 5% 5%;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #superSolution img {
+        width: 287px;
+        left: 350px;
+    }
+
+    #superSolution h1 {
+        font: 5em 'Epilogue', sans-serif;
+        width: 760px;
+    }
+
+    #superSolution p {
+        font: 1.1em 'Epilogue', sans-serif;
+        line-height: 1.8rem;
+        width: 350px;
+        margin: 15% auto;
+    }
+
+    #data {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #data div {
+        margin: 50px;
+    }
+
+    #phone {
+        margin: 0;
+    }
+
+    #note {
+        display: flex;
+        justify-content: flex-end;
+        height: 545px;
+    }
+
+    #Jeremy {
+        content: url(assets/image-jeremy-large.png);
+        bottom: 45px;
+        margin-bottom: -100%;
+    }
+
+    #blur {
+        width: 375px;
+        bottom: 0px;
+    }
+
+    #curve2 {
+        left: 230px;
+        bottom: 450px;
+    }
+
+    #avis {
+        position: static;
+        text-align: left;
+    }
+
+    #avis h2 {
+        font: var(--HeadingL);
+    }
+
+    #quote {
+        font: var(--Quote);
+        margin: 50px auto;
+        height: 175px;
+        width: 350px;
+    }
+
+    #avis h3 {
+        font: var(--HeadingM);
+        line-height: 2rem;
+    }
+}
