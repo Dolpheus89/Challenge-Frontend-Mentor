@@ -155,7 +155,7 @@ nav button:hover {
 #note {
     background-color: var(--DarkBlue);
     border-radius: 15px;
-    margin-top: 150px;
+    margin-top: 200px;
     height: 800px;
 }
 
@@ -216,7 +216,7 @@ footer {
     background-color: var(--Cream);
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: auto;
 }
 
 #copyright {
