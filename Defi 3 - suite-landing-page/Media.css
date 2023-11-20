@@ -24,7 +24,7 @@
     }
 
     footer {
-        margin: auto;
+        margin: 60px auto;
         flex-direction: row;
         justify-content: space-around;
     }
