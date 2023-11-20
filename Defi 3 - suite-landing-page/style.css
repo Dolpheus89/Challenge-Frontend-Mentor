@@ -216,7 +216,7 @@ footer {
     background-color: var(--Cream);
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 50px auto;
 }
 
 #copyright {
