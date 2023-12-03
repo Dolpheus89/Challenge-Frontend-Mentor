@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* ## Colors
+General
+### Primary */
+
+    --LimeGreen: hsl(163, 72%, 41%);
+    --BrightRed: hsl(356, 69%, 56%);
+
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --YouTube: hsl(348, 97%, 39%);
+
+    /* #### Dark Theme */
+
+    --ToggleDark: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+}
+
+html[data-theme="light"] {
+
+    --ToggleAfter: #F1F3FA;
+    --ToggleBG: #AEB3CB;
+
+    --HeaderBG: hsl(225, 100%, 98%);
+    --BodyBG: hsl(0, 0%, 100%);
+    --glass: hsl(227, 47%, 96%);
+    --Text: hsl(228, 12%, 44%);
+    --Type: hsl(230, 17%, 14%);
+    --glassHover: #E1E4F0;
+}
+
+
+html[data-theme="Dark"] {
+
+    --ToggleAfter: #333A55;
+    --ToggleBG: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+    --HeaderBG: hsl(232, 19%, 15%);
+    --BodyBG: hsl(230, 17%, 14%);
+    --glass: hsl(228, 28%, 20%);
+    --Text: hsl(228, 34%, 66%);
+    --Type: hsl(0, 0%, 100%);
+    --glassHover: #333A55;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: var(--Type);
+    margin: 0;
+}
+
+body {
+    background-color: var(--BodyBG);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 15% 15% 1fr 1fr 1fr auto;
+    grid-template-areas:
+        "header header header header header header header header header header"
+        "header header header header header header header header header header"
+        "x x x x x x x x x x "
+        "x x x x x x x x x x "
+        "x x x x x x x x x x "
+        "footer footer footer footer footer footer footer footer footer footer ";
+}
+
+/* Top */
+
+header {
+    grid-area: header;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--HeaderBG);
+}
+
+#topContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+
+#topContainer h1 {
+    font-size: 1.75rem;
+}
+
+#topContainer p {
+    color: var(--Text);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+#toggle {
+    display: flex;
+}
+
+#toggle input:hover {
+    cursor: pointer;
+}
+
+#toggle p {
+    color: #848BAB;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    height: 24px;
+    width: 48px;
+    background-color: var(--ToggleBG);
+    border-radius: 5rem;
+    border-color: #979797;
+    transition: background-color .2s;
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 35%;
+    transform: translate(50%, 50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--ToggleAfter);
+    transition: left .2s;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--ToggleDark);
+
+}
+
+input[type="checkbox"]:checked::after {
+    left: -12%;
+}
+
+
+/* main */
+/* bigglass */
+
+
+main {
+    grid-area: 2 / 2 / 4 / 10;
+}
+
+#bigGlassContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.bigGlass {
+    width: 23%;
+    background-color: var(--glass);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bigGlass::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.facebook::before {
+    background: var(--Facebook);
+}
+
+.twit::before {
+    background: var(--Twitter);
+}
+
+.insta::before {
+    background: var(--Instagram);
+}
+
+.youtube::before {
+    background: var(--YouTube);
+}
+
+.socialMedia {
+    margin: 10% auto;
+}
+
+.socialMedia p::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.facebook .socialMedia p::before {
+    background-image: url(images/icon-facebook.svg);
+}
+
+.insta .socialMedia p::before {
+    background-image: url(images/icon-instagram.svg);
+}
+
+.twit .socialMedia p::before {
+    background-image: url(images/icon-twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.youtube .socialMedia p::before {
+    background-image: url(images/icon-youtube.svg);
+}
+
+.followers h2 {
+    font: bold 3.5rem 'Inter', sans-serif;
+}
+
+.followers p {
+    color: var(--Text);
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+}
+
+.greenEvolution {
+    color: var(--LimeGreen);
+    font: bold 0.75rem 'Inter', sans-serif;
+    margin: 10% auto 5% auto;
+}
+
+.greenEvolution::before {
+    content: "";
+    height: 5px;
+    width: 8px;
+    margin-right: 5px;
+    background-image: url(images/icon-up.svg);
+    background-repeat: no-repeat;
+    display: inline-flex;
+
+}
+
+.redEvolution {
+    color: var(--BrightRed);
+    font: bold 0.75rem 'Inter', sans-serif;
+    margin: 10% auto 5% auto;
+}
+
+.redEvolution::before {
+    content: "";
+    height: 5px;
+    width: 8px;
+    margin-right: 5px;
+    background-image: url(images/icon-down.svg);
+    background-repeat: no-repeat;
+    display: inline-flex;
+
+}
+
+
+/* small glass */
+
+#overview h3 {
+    font: bold 1.5rem 'Inter', sans-serif;
+    color: var(--Text);
+    margin: 3% auto;
+
+}
+
+.glassContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.glass {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-rows: 1.5fr 1fr;
+    width: 23%;
+    background-color: var(--glass);
+    border-radius: 5px;
+    justify-items: flex-start;
+    margin-bottom: 3%;
+}
+
+.type {
+    color: var(--Text);
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin: 15% 10% 10% 10%;
+}
+
+.glass img {
+    margin: auto;
+    padding-right: 10px;
+}
+
+.numb {
+    font-size: 2rem;
+    margin: 0 10% 10% 10%;
+}
+
+.glass .greenEvolution,
+.glass .redEvolution {
+    padding-right: 20px;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.bigGlass:hover,
+.glass:hover {
+    background-color: var(--glassHover);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:900px) {
+    body {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: repeat(10, 15% 15% auto);
+        grid-template-areas:
+            "header header header"
+            "header header header"
+            "x x x"
+            "x x x"
+            "x x x"
+            "footer footer footer";
+    }
+
+    #topContainer {
+        justify-content: center;
+    }
+
+    #topContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    #headingContainer {
+        border-bottom: 1px solid #848BAB;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    #toggle {
+        width: 90%;
+        justify-content: space-between;
+        margin: 5% auto;
+    }
+
+    main {
+        margin-top: 50px;
+        grid-area: 2 / 2 / 4 / 3;
+        justify-content: center;
+    }
+
+    #bigGlassContainer,
+    .glassContainer {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .bigGlass,
+    .glass {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    body {
+        grid-template-columns: 1fr 6fr 1fr;
+    }
+
+    .bigGlass,
+    .glass {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
