@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/hub))
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://dolpheus89.github.io/ChallengeFrontendmentor.github.io/Defi%204%20-social-media-dashboard-with-theme-switcher-master/index.html))
+- Solution URL: [Add solution URL here]([https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/hub])
+- Live Site URL: [Add live site URL here]([https://dolpheus89.github.io/ChallengeFrontendmentor.github.io/Defi%204%20-social-media-dashboard-with-theme-switcher-master/index.html])
 
 ## My process
 
