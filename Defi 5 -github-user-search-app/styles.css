@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* General Root */
+
+:root {
+    --HeadingXL: bold 1.625rem 'Space Mono', monospace;
+    --HeadingL: bold 1.375rem 'Space Mono', monospace;
+    --HeadingM: 1rem 'Space Mono', monospace;
+    --HeadingS: bold 0.813rem 'Space Mono', monospace;
+    --body: 1rem 'Space Mono', monospace;
+
+    --buttonBG: hsl(212, 100%, 50%);
+    --buttonBGHover: #60abff;
+}
+
+html[data-theme="dark"] {
+    --bodyBG: hsl(220, 40%, 13%);
+    --bodyFontColor: hsl(0, 0%, 100%);
+    --fontActive: hsl(0, 0%, 100%);
+    --boxBG: hsl(222, 41%, 20%);
+    --moonSun: hsl(0, 0%, 100%);
+    --moonSunHover: brightness(0.85);
+
+    --shadow: 0 0px 0px 0px #4660bb33;
+}
+
+html[data-theme="light"] {
+    --bodyBG: hsl(227, 100%, 98%);
+    --bodyFontColor: hsl(217, 35%, 45%);
+    --fontActive: #222731;
+    --boxBG: #fefefe;
+    --moonSun: hsl(217, 20%, 51%);
+    --moonSunHover: brightness(0);
+
+    --shadow: 0 30px 16px -10px #4660bb33;
+}
+
+::placeholder {
+    color: var(--bodyFontColor);
+}
+
+* {
+    font: var(--body);
+    line-height: 1.563rem;
+    margin: 0;
+}
+
+body {
+    margin: auto auto;
+    min-height: 100vh;
+    background-color: var(--bodyBG);
+    color: var(--bodyFontColor);
+    min-height: 100svh;
+}
+
+h1 {
+    font: var(--HeadingXL);
+    line-height: 2.375rem;
+    color: var(--fontActive);
+}
+
+h2 {
+    font: var(--HeadingL);
+    line-height: 2.063rem;
+    color: var(--fontActive);
+}
+
+h3 {
+    font: var(--HeadingM);
+    line-height: 1.5rem;
+}
+
+h4 {
+    font: var(--HeadingS);
+    line-height: 1.25rem;
+    letter-spacing: 2.5px;
+    color: var(--moonSun);
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--bodyFontColor);
+}
+
+#globalContainer {
+    width: 60%;
+    margin: auto;
+    padding-top: 3%;
+    max-width: 850px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+path {
+    fill: var(--bodyFontColor);
+}
+
+/* search section */
+
+#moonSun {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+#moonSun:hover {
+    filter: var(--moonSunHover);
+}
+
+#searchContainer {
+    height: 69px;
+    background: var(--boxBG);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 5%;
+}
+
+#searchinput {
+    display: flex;
+    width: 60%;
+}
+
+#searchinput label {
+    margin: 0 5%;
+}
+
+#search {
+    width: 100%;
+    font-size: 1.125rem;
+    border-style: none;
+    background-color: #fefefe;
+    background: var(--body);
+    color: var(--bodyFontColor);
+}
+
+
+#search:focus {
+    outline: var(--boxBG);
+    background: var(--boxBG);
+    color: var(--fontActive);
+}
+
+#submit {
+    background-color: var(--buttonBG);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fefefe;
+    border-radius: 10px;
+    border-style: none;
+    height: 50px;
+    width: 106px;
+    margin: 0 2%;
+}
+
+
+#submit:hover {
+    background-color: #60abff;
+    cursor: pointer;
+}
+
+/* Section result */
+
+#result {
+    background: var(--boxBG);
+    border-radius: 15px;
+    margin: 3% auto;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 30px;
+}
+
+#pic {
+    width: 117px;
+    border-radius: 50%;
+}
+
+#profilePic {
+    margin-left: 5%;
+}
+
+#IDContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+#flexContainer {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bio {
+    width: 75%;
+}
+
+#id {
+    margin-top: 10px;
+    color: var(--buttonBG);
+}
+
+#dataContainer {
+    display: flex;
+    width: 75%;
+    height: 85px;
+    background-color: var(--bodyBG);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 0 5% 0;
+
+}
+
+
+/* links */
+
+#links {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5% 8%;
+    margin-bottom: 10%;
+}
+
+.social {
+    font: var(--body);
+    color: var --bodyFontColor;
+    display: flex;
+    margin: 10px;
+}
+
+.social::before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-right: 20px;
+}
+
+#city::before {
+    background-image: url(assets/icon-location.svg);
+}
+
+#twit::before {
+    background-image: url(assets/icon-twitter.svg);
+}
+
+#github::before {
+    background-image: url(assets/icon-website.svg);
+}
+
+#job::before {
+    background-image: url(assets/icon-company.svg);
+}
+
+
+@media screen and (max-width:1024px) {
+    #globalContainer {
+        width: 80%;
+    }
+
+    #result {
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    #flexContainer {
+        width: 50%;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    #bio {
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    #links {
+        width: 90%;
+    }
+
+    #dataContainer {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    #links {
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --HeadingM: 1rem 'Space Mono', monospace;
+    }
+
+    #globalContainer {
+        width: 95%;
+    }
+
+    #IDContainer {
+        justify-content: space-around;
+    }
+
+    h4 {
+        font-size: 0.688rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #profilepPic img {
+        width: 70px;
+    }
+
+    #identification h1 {
+        font-size: 1.2rem;
+    }
+
+    #id {
+        margin-top: 0px;
+        font-size: 0.863rem;
+    }
+
+    #join {
+        font-size: 0.863rem;
+    }
+
+    #flexContainer {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    #bio {
+        font-size: 0.863rem;
+    }
+}

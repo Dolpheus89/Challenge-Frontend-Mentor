@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <div id="globalContainer">
+    <header>
+      <h1 id="logo">devfinder</h1>
+      <div id="moonSun">
+        <h4>DARK</h4>
+        <img src="assets/icon-moon.svg" alt="moon icon" id="moon">
+      </div>
+    </header>
+    <section id="searchContainer">
+      <div id="searchinput">
+        <label for="search"><img src="assets/icon-search.svg" alt="search icon"></label>
+        <input type="text" name="search" id="search" placeholder="Search GitHub username…">
+      </div>
+      <input type="button" value="Search" id="submit">
+    </section>
+    <section id="result">
+      <div id="IDContainer">
+        <div id="profilepPic"><img src="assets/Profilepicture.svg" alt="Profilepicture" id="pic"></div>
+        <div id="flexContainer">
+        <div id="identification">
+          <h1 id="name">The Octocat</h1>
+          <p id="id">@octocat</p>
+        </div>
+        <p id="join">Joined 25 Jan 2011</p>
+      </div>
+      </div>
+      <p id="bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eligendi est vero temporibus dolorum?</p>
+      <div id="dataContainer">
+        <div id="repoContainer" class="data">
+          <h4>Repos</h4>
+          <h2 id="repo">8</h2>
+        </div>
+        <div id="FollowersContainer" class="data">
+          <h4>Followers</h4>
+          <h2 id="followers">3938</h2>
+        </div>
+        <div id="FollowingContainet" class="data">
+          <h4>Following</h4>
+          <h2 id="following">9</h2>
+        </div>
+      </div>
+      <div id="links">
+        <div class="social" id="city">San Francisco</div>
+        <div class="social" id="twit">Not Available</div>
+        <div class="social " id="github"><a href="#">https://github.blog</a></div>
+        <div class="social" id="job">@github</div>
+      </div>
+    </section>
+    
+  
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
