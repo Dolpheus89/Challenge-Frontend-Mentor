@@ -129,11 +129,21 @@ path {
     border-radius: 15px;
     box-shadow: var(--shadow);
     margin-top: 5%;
+    position: relative;
 }
 
 #searchinput {
     display: flex;
     width: 60%;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 45px;
+    left: 70px;
+    font-size: 0.7rem;
 }
 
 #searchinput label {
